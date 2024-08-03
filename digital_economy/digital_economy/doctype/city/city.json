@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:city_name",
  "creation": "2024-08-03 15:43:37.098359",
@@ -181,7 +182,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-03 15:57:32.078083",
+ "modified": "2024-08-03 17:33:39.569424",
  "modified_by": "Administrator",
  "module": "Digital Economy",
  "name": "City",

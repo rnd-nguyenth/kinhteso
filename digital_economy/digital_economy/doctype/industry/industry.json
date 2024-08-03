@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:industry_name",
  "creation": "2024-08-03 15:29:49.197775",
@@ -7,9 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "industry_name",
-  "column_break_wdan",
+  "section_break_otzv",
   "kts_type",
-  "column_break_hpdu",
+  "column_break_wdan",
   "cap_nganh"
  ],
  "fields": [
@@ -36,13 +37,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_hpdu",
-   "fieldtype": "Column Break"
+   "fieldname": "section_break_otzv",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-03 15:34:14.277770",
+ "modified": "2024-08-03 17:40:22.219018",
  "modified_by": "Administrator",
  "module": "Digital Economy",
  "name": "Industry",
