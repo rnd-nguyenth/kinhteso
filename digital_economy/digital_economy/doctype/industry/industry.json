@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:industry_name",
+ "creation": "2024-08-03 15:29:49.197775",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "industry_name",
+  "column_break_wdan",
+  "kts_type",
+  "column_break_hpdu",
+  "cap_nganh"
+ ],
+ "fields": [
+  {
+   "fieldname": "industry_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "kts_type",
+   "fieldtype": "Select",
+   "label": "KTS Type",
+   "options": "\nKTS ICT l\u00f5i\nKTS ng\u00e0nh, l\u0129nh v\u1ef1c ngo\u00e0i ICT"
+  },
+  {
+   "fieldname": "cap_nganh",
+   "fieldtype": "Select",
+   "label": "Industry Grade",
+   "options": "\nC\u1ea5p 1\nC\u1ea5p 2\nC\u1ea5p 3\nC\u1ea5p 4\nC\u1ea5p 5"
+  },
+  {
+   "fieldname": "column_break_wdan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hpdu",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-03 15:34:14.277770",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Industry",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
