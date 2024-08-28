@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-08-16 14:28:12.059993",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "bo_chi_so",
+  "stt",
+  "column_break_oasp",
+  "loai_chi_so",
+  "diem_co_so",
+  "section_break_yqie",
+  "thanh_phan"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "T\u00ean ch\u1ec9 s\u1ed1",
+   "unique": 1
+  },
+  {
+   "fieldname": "loai_chi_so",
+   "fieldtype": "Select",
+   "label": "Lo\u1ea1i ch\u1ec9 s\u1ed1",
+   "options": "\nH\u1ea1 t\u1ea7ng\nPh\u1ed5 c\u1eadp\nPh\u1ed5 c\u1eadp kinh t\u1ebf s\u1ed1\nHi\u1ec7u qu\u1ea3 kinh t\u1ebf s\u1ed1"
+  },
+  {
+   "fieldname": "bo_chi_so",
+   "fieldtype": "Select",
+   "label": "B\u1ed9 ch\u1ec9 s\u1ed1",
+   "options": "\nN\u1ec1n t\u1ea3ng\nKinh t\u1ebf s\u1ed1\nKinh t\u1ebf s\u1ed1 Logistic"
+  },
+  {
+   "fieldname": "diem_co_so",
+   "fieldtype": "Float",
+   "label": "\u0110i\u1ec3m c\u01a1 s\u1edf"
+  },
+  {
+   "fieldname": "column_break_oasp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yqie",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "thanh_phan",
+   "fieldtype": "Table",
+   "label": "Th\u00e0nh ph\u1ea7n",
+   "options": "Digital Economy Sub-Index"
+  },
+  {
+   "fieldname": "stt",
+   "fieldtype": "Int",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-17 21:40:54.049864",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Digital Economy Index Name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

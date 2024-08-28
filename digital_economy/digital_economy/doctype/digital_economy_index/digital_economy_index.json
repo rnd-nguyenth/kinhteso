@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-08-16 13:38:50.209306",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ten_chi_so",
+  "diem_co_so",
+  "muc_tieu",
+  "column_break_gcrs",
+  "quy",
+  "nam",
+  "thoi_gian",
+  "section_break_xfkn",
+  "chi_so_thanh_phan",
+  "section_break_evul",
+  "dat_duoc",
+  "column_break_cbrd",
+  "diem_quy_doi",
+  "section_break_ttfe",
+  "loai_chi_so",
+  "title",
+  "column_break_sxpb",
+  "bo_chi_so",
+  "stt"
+ ],
+ "fields": [
+  {
+   "fieldname": "ten_chi_so",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "T\u00ean ch\u1ec9 s\u1ed1",
+   "options": "Digital Economy Index Name"
+  },
+  {
+   "fetch_from": "ten_chi_so.diem_co_so",
+   "fieldname": "diem_co_so",
+   "fieldtype": "Int",
+   "label": "\u0110i\u1ec3m c\u01a1 s\u1edf"
+  },
+  {
+   "description": "\u0110\u01a1n v\u1ecb: %",
+   "fieldname": "muc_tieu",
+   "fieldtype": "Percent",
+   "label": "M\u1ee5c ti\u00eau",
+   "precision": "2"
+  },
+  {
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "label": "Qu\u00fd",
+   "options": "\nQu\u00fd I\nQu\u00fd II\nQu\u00fd III\nQu\u00fd IV"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Int",
+   "label": "N\u0103m"
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian",
+   "read_only_depends_on": "eval: doc.thoi_gian"
+  },
+  {
+   "fieldname": "section_break_xfkn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "T\u00ean",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_gcrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ttfe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "ten_chi_so.loai_chi_so",
+   "fieldname": "loai_chi_so",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Lo\u1ea1i ch\u1ec9 s\u1ed1",
+   "options": "\nH\u1ea1 t\u1ea7ng\nPh\u1ed5 c\u1eadp\nPh\u1ed5 c\u1eadp kinh t\u1ebf s\u1ed1\nHi\u1ec7u qu\u1ea3 kinh t\u1ebf s\u1ed1"
+  },
+  {
+   "fetch_from": "ten_chi_so.bo_chi_so",
+   "fieldname": "bo_chi_so",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "B\u1ed9 ch\u1ec9 s\u1ed1",
+   "options": "\nN\u1ec1n t\u1ea3ng\nKinh t\u1ebf s\u1ed1\nKinh t\u1ebf s\u1ed1 Logistic"
+  },
+  {
+   "fieldname": "section_break_evul",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u0110\u01a1n v\u1ecb: %",
+   "fieldname": "dat_duoc",
+   "fieldtype": "Percent",
+   "label": "\u0110\u1ea1t \u0111\u01b0\u1ee3c"
+  },
+  {
+   "fieldname": "column_break_cbrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "diem_quy_doi",
+   "fieldtype": "Float",
+   "label": "\u0110i\u1ec3m quy \u0111\u1ed5i",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.chi_so_thanh_phan.length > 0",
+   "fieldname": "chi_so_thanh_phan",
+   "fieldtype": "Table",
+   "label": "Ch\u1ec9 s\u1ed1 th\u00e0nh ph\u1ea7n",
+   "options": "Digital Economy Sub-Index"
+  },
+  {
+   "fieldname": "column_break_sxpb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "ten_chi_so.stt",
+   "fieldname": "stt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-18 13:08:29.424014",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "Digital Economy Index",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

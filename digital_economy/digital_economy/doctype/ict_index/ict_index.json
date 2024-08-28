@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-08-14 15:52:57.543372",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "chi_so_grdp",
+  "column_break_nrrx",
+  "he_so_chuyen_doi",
+  "column_break_ucuu",
+  "title",
+  "section_break_hzni",
+  "bang_thong_ke",
+  "section_break_pdfh",
+  "quy",
+  "thoi_gian",
+  "column_break_xoya",
+  "nam",
+  "column_break_ocur",
+  "tong_va"
+ ],
+ "fields": [
+  {
+   "fieldname": "chi_so_grdp",
+   "fieldtype": "Link",
+   "label": "Ch\u1ec9 s\u1ed1 GRDP",
+   "options": "eDigital"
+  },
+  {
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Qu\u00fd",
+   "options": "\nQu\u00fd I\nQu\u00fd II\nQu\u00fd III\nQu\u00fd IV"
+  },
+  {
+   "fieldname": "column_break_nrrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ucuu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "N\u0103m"
+  },
+  {
+   "fieldname": "section_break_hzni",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u0110\u01a1n v\u1ecb t\u00ednh: Tri\u1ec7u \u0111\u1ed3ng",
+   "fieldname": "bang_thong_ke",
+   "fieldtype": "Table",
+   "label": "B\u1ea3ng th\u1ed1ng k\u00ea",
+   "options": "ICT Index Industries"
+  },
+  {
+   "fieldname": "section_break_pdfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian"
+  },
+  {
+   "fieldname": "column_break_xoya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "he_so_chuyen_doi",
+   "fieldtype": "Float",
+   "label": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i",
+   "precision": "9"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "T\u00ean",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ocur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "tong_va",
+   "fieldtype": "Currency",
+   "label": "T\u1ed5ng VA",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "dEconomy",
+   "link_fieldname": "ict_index"
+  }
+ ],
+ "modified": "2024-08-16 10:49:22.647735",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "ICT Index",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-08-10 09:25:37.832632",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "th\u00f4ng_tin_tab",
+  "th\u1eddi_gian_section",
+  "quy",
+  "thoi_gian",
+  "column_break_gmpc",
+  "nam",
+  "title",
+  "column_break_srlv",
+  "column_break_vkop",
+  "thu\u1ebf_section",
+  "thue_san_pham_tru_tro_cap_san_pham",
+  "column_break_ktfm",
+  "thue_san_pham",
+  "thue_nhap_khau",
+  "column_break_evct",
+  "vat_va_cac_loai_thue_san_pham",
+  "tro_cap_san_pham",
+  "column_break_tyfm",
+  "tong_grdp",
+  "bang_thong_ke_tab",
+  "bang_thong_ke",
+  "ph\u00e2n_theo_ng\u00e0nh_c\u1ea5p_ii_tab",
+  "nganh_kinh_te_cap_hai"
+ ],
+ "fields": [
+  {
+   "fieldname": "quy",
+   "fieldtype": "Select",
+   "label": "Qu\u00fd",
+   "options": "\nQu\u00fd I\nQu\u00fd II\nQu\u00fd III\nQu\u00fd IV"
+  },
+  {
+   "fieldname": "column_break_gmpc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nam",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "N\u0103m"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "T\u00ean",
+   "unique": 1
+  },
+  {
+   "fieldname": "th\u1eddi_gian_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u0110\u01a1n v\u1ecb t\u00ednh: Tri\u1ec7u \u0111\u1ed3ng",
+   "fieldname": "bang_thong_ke",
+   "fieldtype": "Table",
+   "label": "B\u1ea3ng th\u1ed1ng k\u00ea",
+   "options": "eDigital Industries 1"
+  },
+  {
+   "fieldname": "ph\u00e2n_theo_ng\u00e0nh_c\u1ea5p_ii_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ng\u00e0nh Kinh t\u1ebf c\u1ea5p II"
+  },
+  {
+   "description": "\u0110\u01a1n v\u1ecb t\u00ednh: Tri\u1ec7u \u0111\u1ed3ng",
+   "fieldname": "nganh_kinh_te_cap_hai",
+   "fieldtype": "Table",
+   "label": "Ng\u00e0nh kinh t\u1ebf c\u1ea5p II",
+   "options": "eDigital Industries 2"
+  },
+  {
+   "fieldname": "thue_san_pham_tru_tro_cap_san_pham",
+   "fieldtype": "Currency",
+   "label": "Thu\u1ebf s\u1ea3n ph\u1ea9m tr\u1eeb tr\u1ee3 c\u1ea5p s\u1ea3n ph\u1ea9m",
+   "precision": "0"
+  },
+  {
+   "bold": 1,
+   "fieldname": "tong_grdp",
+   "fieldtype": "Currency",
+   "label": "GRDP",
+   "precision": "9"
+  },
+  {
+   "fieldname": "thu\u1ebf_section",
+   "fieldtype": "Section Break",
+   "label": "Thu\u1ebf & GRDP"
+  },
+  {
+   "fieldname": "bang_thong_ke_tab",
+   "fieldtype": "Tab Break",
+   "label": "B\u1ea3ng Th\u1ed1ng k\u00ea"
+  },
+  {
+   "fieldname": "th\u00f4ng_tin_tab",
+   "fieldtype": "Tab Break",
+   "label": "Th\u00f4ng tin"
+  },
+  {
+   "fieldname": "column_break_srlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vkop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ktfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thue_san_pham",
+   "fieldtype": "Currency",
+   "label": "Thu\u1ebf s\u1ea3n ph\u1ea9m",
+   "precision": "0"
+  },
+  {
+   "fieldname": "thue_nhap_khau",
+   "fieldtype": "Currency",
+   "label": "Thu\u1ebf nh\u1eadp kh\u1ea9u",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_evct",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_va_cac_loai_thue_san_pham",
+   "fieldtype": "Currency",
+   "label": "VAT v\u00e0 c\u00e1c lo\u1ea1i thu\u1ebf s\u1ea3n ph\u1ea9m",
+   "precision": "0"
+  },
+  {
+   "fieldname": "tro_cap_san_pham",
+   "fieldtype": "Currency",
+   "label": "Tr\u1ee3 c\u1ea5p s\u1ea3n ph\u1ea9m",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_tyfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thoi_gian",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Th\u1eddi gian",
+   "read_only_depends_on": "eval: doc.thoi_gian"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "ICT Index",
+   "link_fieldname": "chi_so_grdp"
+  }
+ ],
+ "modified": "2024-08-17 20:41:36.394249",
+ "modified_by": "Administrator",
+ "module": "Digital Economy",
+ "name": "eDigital",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
