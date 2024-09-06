@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:city_name",
+ "creation": "2024-09-06 10:20:14.050435",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "city_name",
+  "conversion_rate",
+  "section_break_jjqg",
+  "industries",
+  "grdp_section",
+  "grdp_ca_tinh_nam_truoc",
+  "thue_san_pham_nam_truoc",
+  "grdp_ca_thue_nam_truoc",
+  "column_break_focx",
+  "grdp_ca_tinh_nam_nay",
+  "thue_san_pham",
+  "grdp_ca_thue",
+  "column_break_pfbn",
+  "va_ict_ca_tinh",
+  "section_break_eujr",
+  "kts_loi_nam_truoc",
+  "kts_lan_toa_nam_truoc",
+  "kts_tinh_nam_truoc",
+  "column_break_lpwm",
+  "kts_loi_nam_nay",
+  "kts_lan_toa_nam_nay",
+  "kts_tinh_nam_nay"
+ ],
+ "fields": [
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u1ec9nh/Th\u00e0nh ph\u1ed1",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "conversion_rate",
+   "fieldtype": "Float",
+   "label": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i",
+   "permlevel": 1,
+   "precision": "9"
+  },
+  {
+   "fieldname": "section_break_jjqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "industries",
+   "fieldtype": "Table",
+   "label": "Ng\u00e0nh, l\u0129nh v\u1ef1c (\u0110VT: Tri\u1ec7u VND)",
+   "options": "City Industries"
+  },
+  {
+   "fieldname": "grdp_section",
+   "fieldtype": "Section Break",
+   "label": "GRDP"
+  },
+  {
+   "fieldname": "grdp_ca_tinh_nam_truoc",
+   "fieldtype": "Currency",
+   "label": "GRDP c\u1ea3 t\u1ec9nh n\u0103m tr\u01b0\u1edbc",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "thue_san_pham_nam_truoc",
+   "fieldtype": "Currency",
+   "label": "Thu\u1ebf s\u1ea3n ph\u1ea9m n\u0103m tr\u01b0\u1edbc",
+   "permlevel": 4,
+   "precision": "2"
+  },
+  {
+   "fieldname": "grdp_ca_thue_nam_truoc",
+   "fieldtype": "Currency",
+   "label": "GRDP c\u1ea3 thu\u1ebf n\u0103m tr\u01b0\u1edbc",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_focx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grdp_ca_tinh_nam_nay",
+   "fieldtype": "Currency",
+   "label": "GRDP c\u1ea3 t\u1ec9nh n\u0103m nay",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "thue_san_pham",
+   "fieldtype": "Currency",
+   "label": "Thu\u1ebf s\u1ea3n ph\u1ea9m",
+   "permlevel": 4,
+   "precision": "2"
+  },
+  {
+   "fieldname": "grdp_ca_thue",
+   "fieldtype": "Currency",
+   "label": "GRDP c\u1ea3 thu\u1ebf",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pfbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "va_ict_ca_tinh",
+   "fieldtype": "Currency",
+   "label": "VA ICT c\u1ea3 t\u1ec9nh",
+   "permlevel": 1,
+   "precision": "9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_eujr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kts_loi_nam_truoc",
+   "fieldtype": "Percent",
+   "label": "KTS l\u00f5i n\u0103m tr\u01b0\u1edbc",
+   "permlevel": 2,
+   "precision": "2",
+   "read_only_depends_on": "eval: doc.kts_loi_nam_truoc !== null && doc.kts_loi_nam_truoc !== 0"
+  },
+  {
+   "fieldname": "kts_lan_toa_nam_truoc",
+   "fieldtype": "Percent",
+   "label": "KTS lan t\u1ecfa n\u0103m tr\u01b0\u1edbc",
+   "permlevel": 2,
+   "precision": "2",
+   "read_only_depends_on": "eval: doc.kts_lan_toa_nam_truoc !== null && doc.kts_lan_toa_nam_truoc !== 0"
+  },
+  {
+   "fieldname": "kts_tinh_nam_truoc",
+   "fieldtype": "Percent",
+   "label": "KTS t\u1ec9nh n\u0103m tr\u01b0\u1edbc",
+   "permlevel": 2,
+   "precision": "2",
+   "read_only_depends_on": "eval: doc.kts_tinh_nam_truoc !== null && doc.kts_tinh_nam_truoc !== 0"
+  },
+  {
+   "fieldname": "column_break_lpwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kts_loi_nam_nay",
+   "fieldtype": "Percent",
+   "label": "KTS l\u00f5i n\u0103m nay",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kts_lan_toa_nam_nay",
+   "fieldtype": "Percent",
+   "label": "KTS lan t\u1ecfa n\u0103m nay",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kts_tinh_nam_nay",
+   "fieldtype": "Percent",
+   "label": "KTS t\u1ec9nh n\u0103m nay",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 10:38:43.744931",
+ "modified_by": "Administrator",
+ "module": "Kinhteso",
+ "name": "City",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

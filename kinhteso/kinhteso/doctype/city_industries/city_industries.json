@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:industry_name",
+ "creation": "2024-09-06 10:00:51.094748",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "industry_name",
+  "cap_nganh",
+  "ty_le_chi_tieu_ict_tieu_dung_trung_gian",
+  "column_break_sgat",
+  "grdp_nam_truoc",
+  "grdp_nam_nay",
+  "column_break_kwmn",
+  "kts_type",
+  "va_ict",
+  "va_ict_nganh",
+  "va_ict_tong_va"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "industry_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u00e0nh, l\u0129nh v\u1ef1c",
+   "options": "Industry",
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "ty_le_chi_tieu_ict_tieu_dung_trung_gian",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "T\u1ef7 l\u1ec7 chi ti\u00eau ICT/Ti\u00eau d\u00f9ng trung gian",
+   "permlevel": 1,
+   "precision": "9"
+  },
+  {
+   "fieldname": "column_break_sgat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "grdp_nam_truoc",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "GRDP n\u0103m tr\u01b0\u1edbc",
+   "permlevel": 4,
+   "precision": "9"
+  },
+  {
+   "columns": 1,
+   "fieldname": "grdp_nam_nay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "GRDP n\u0103m nay",
+   "permlevel": 4,
+   "precision": "9"
+  },
+  {
+   "fieldname": "column_break_kwmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "industry_name.kts_type",
+   "fieldname": "kts_type",
+   "fieldtype": "Data",
+   "label": "Lo\u1ea1i KTS ICT",
+   "permlevel": 2
+  },
+  {
+   "columns": 1,
+   "fieldname": "va_ict",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "VA ICT",
+   "permlevel": 1,
+   "precision": "9",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "va_ict_nganh",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "VA ICT/Ng\u00e0nh",
+   "permlevel": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "va_ict_tong_va",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "VA ICT/T\u1ed5ng VA",
+   "permlevel": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cap_nganh",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C\u1ea5p ng\u00e0nh",
+   "options": "\nC\u1ea5p 1\nC\u1ea5p 2\nC\u1ea5p 3\nC\u1ea5p 4",
+   "permlevel": 5
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 10:24:18.416739",
+ "modified_by": "Administrator",
+ "module": "Kinhteso",
+ "name": "City Industries",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
